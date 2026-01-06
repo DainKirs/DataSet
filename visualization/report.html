@@ -1,0 +1,140 @@
+
+    <!DOCTYPE html>
+    <html lang="ru">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Отчет анализа игр</title>
+        <style>
+            body { font-family: Arial, sans-serif; margin: 0; padding: 20px; background-color: #f5f5f5; }
+            .container { max-width: 1200px; margin: 0 auto; background: white; padding: 30px; border-radius: 10px; box-shadow: 0 0 10px rgba(0,0,0,0.1); }
+            h1 { color: #333; border-bottom: 2px solid #4CAF50; padding-bottom: 10px; }
+            h2 { color: #444; margin-top: 30px; }
+            .stats { background: #f9f9f9; padding: 20px; border-radius: 5px; margin: 20px 0; }
+            .stat-item { margin: 10px 0; padding: 10px; background: white; border-left: 4px solid #4CAF50; }
+            .files { display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); gap: 20px; margin: 30px 0; }
+            .file-card { background: #e8f5e9; padding: 15px; border-radius: 5px; border: 1px solid #c8e6c9; }
+            .file-card a { display: block; color: #2e7d32; text-decoration: none; font-weight: bold; margin: 5px 0; }
+            .file-card a:hover { color: #1b5e20; text-decoration: underline; }
+            table { width: 100%; border-collapse: collapse; margin: 20px 0; }
+            th, td { padding: 12px; text-align: left; border-bottom: 1px solid #ddd; }
+            th { background-color: #4CAF50; color: white; }
+            tr:hover { background-color: #f5f5f5; }
+            .images { display: flex; flex-wrap: wrap; gap: 20px; margin: 20px 0; }
+            .image-container { flex: 1; min-width: 300px; }
+            .image-container img { max-width: 100%; height: auto; border: 1px solid #ddd; border-radius: 5px; }
+            .file-list { background: #f8f9fa; padding: 15px; border-radius: 5px; margin: 20px 0; }
+            .file-item { padding: 8px 0; border-bottom: 1px solid #eee; }
+            .success { color: #4CAF50; font-weight: bold; }
+            .warning { color: #ff9800; font-weight: bold; }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <h1>📊 Отчет анализа видеоигр</h1>
+            
+            <div class="stats">
+                <h2>📈 Основная статистика</h2>
+                <div class="stat-item"><strong>Всего игр:</strong> 15,402</div>
+                <div class="stat-item"><strong>Уникальных платформ:</strong> 43</div>
+                <div class="stat-item"><strong>Средняя оценка:</strong> 6.47</div>
+                <div class="stat-item"><strong>Диапазон оценок:</strong> 1 - 9</div>
+            </div>
+            
+            <h2>🎮 Топ-5 платформ по количеству игр</h2>
+            <table>
+                <tr><th>Платформа</th><th>Количество игр</th><th>Средняя оценка</th></tr>
+    <tr><td>PC</td><td>4,434.0</td><td>6.50</td></tr><tr><td>PS2</td><td>1,385.0</td><td>6.44</td></tr><tr><td>X360</td><td>1,360.0</td><td>6.53</td></tr><tr><td>PS3</td><td>982.0</td><td>6.71</td></tr><tr><td>PS</td><td>932.0</td><td>5.88</td></tr>
+            </table>
+            
+            <h2>📁 Все созданные файлы</h2>
+            <div class="file-list">
+    <div class="file-item">✅ 🖼️ <a href="advanced_analysis.png" target="_blank">advanced_analysis.png</a> (90,664 байт)</div><div class="file-item">✅ 🖼️ <a href="games_analysis.png" target="_blank">games_analysis.png</a> (144,427 байт)</div><div class="file-item">✅ 📊 <a href="games_count.html" target="_blank">games_count.html</a> (8,503 байт)</div><div class="file-item">✅ 📊 <a href="games_interactive.html" target="_blank">games_interactive.html</a> (8,939 байт)</div><div class="file-item">✅ 📊 <a href="games_scatter.html" target="_blank">games_scatter.html</a> (47,891 байт)</div><div class="file-item">✅ 📋 <a href="processed_games.csv" target="_blank">processed_games.csv</a> (856,467 байт)</div>
+            </div>
+            
+            <h2>📈 Интерактивные графики</h2>
+            <div class="files">
+                <div class="file-card">
+                    <h3>🎮 games_interactive.html</h3>
+                    <a href="games_interactive.html" target="_blank">Открыть график</a>
+                    <p>Интерактивный график средних оценок по платформам</p>
+                    <p class="success">
+                        ✅ Файл создан
+                    </p>
+                </div>
+                
+                <div class="file-card">
+                    <h3>📊 games_count.html</h3>
+                    <a href="games_count.html" target="_blank">Открыть график</a>
+                    <p>График количества игр по платформам</p>
+                    <p class="success">
+                        ✅ Файл создан
+                    </p>
+                </div>
+                
+                <div class="file-card">
+                    <h3>✨ games_scatter.html</h3>
+                    <a href="games_scatter.html" target="_blank">Открыть график</a>
+                    <p>Scatter plot распределения оценок</p>
+                    <p class="success">
+                        ✅ Файл создан
+                    </p>
+                </div>
+            </div>
+            
+            <h2>🖼️ Статические изображения</h2>
+            <div class="images">
+                <div class="image-container">
+                    <h3>Основной анализ</h3>
+                    <a href="games_analysis.png" target="_blank">
+                        <img src="games_analysis.png" alt="Основные графики" onerror="this.style.display='none'">
+                    </a>
+                    <p><a href="games_analysis.png" target="_blank">games_analysis.png</a></p>
+                </div>
+                <div class="image-container">
+                    <h3>Расширенный анализ</h3>
+                    <a href="advanced_analysis.png" target="_blank">
+                        <img src="advanced_analysis.png" alt="Расширенный анализ" onerror="this.style.display='none'">
+                    </a>
+                    <p><a href="advanced_analysis.png" target="_blank">advanced_analysis.png</a></p>
+                </div>
+            </div>
+            
+            <div style="margin-top: 40px; padding: 20px; background: #f0f7ff; border-radius: 5px; border-left: 4px solid #2196F3;">
+                <h3>ℹ️ Как использовать</h3>
+                <p>✅ <strong>Все файлы находятся в одной папке:</strong> visualization/</p>
+                <p>1. Нажмите на любую ссылку выше для открытия файла</p>
+                <p>2. HTML файлы открываются в браузере</p>
+                <p>3. Для интерактивных графиков Bokeh: наведите курсор, используйте колесико мыши для масштабирования</p>
+                <p>4. Если графики не отображаются, установите Bokeh: <code>pip install bokeh</code></p>
+            </div>
+            
+            <div style="margin-top: 30px; text-align: center; color: #666; font-size: 0.9em;">
+                <p>Отчет сгенерирован автоматически с помощью Python</p>
+                <p>Дата создания: 2026-01-06 14:18:59</p>
+            </div>
+        </div>
+        
+        <script>
+            // Проверка доступности файлов
+            function checkFiles() {
+                const files = ['games_interactive.html', 'games_count.html', 'games_scatter.html'];
+                files.forEach(file => {
+                    fetch(file)
+                        .then(response => {
+                            if (!response.ok) {
+                                console.log(`Файл ${file} не найден`);
+                            }
+                        })
+                        .catch(error => {
+                            console.log(`Ошибка при проверке файла ${file}:`, error);
+                        });
+                });
+            }
+            
+            // Запускаем проверку при загрузке страницы
+            window.addEventListener('load', checkFiles);
+        </script>
+    </body>
+    </html>
+    
